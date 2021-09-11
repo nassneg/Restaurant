@@ -716,16 +716,22 @@
 }
 
 .order__btn:hover {
-  color: #282828;
+  color: white;
 }
 
-.map {
-  height: auto;
-  padding: 360px 0;
-  background: url("../img/map.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.map__inner {
+  height: 100%;
+  width: 100%;
+}
+
+.map__canvas {
+  height: 100%;
+  width: 100%;
+}
+
+.map__canvas iframe {
+  height: 700px;
+  width: 100%;
 }
 
 .footer {
