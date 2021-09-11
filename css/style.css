@@ -721,8 +721,8 @@
 
 .map__inner {
   position: relative;
-  padding-bottom: 56.25%;
-  padding-top: 25px;
+  padding-bottom: 70%;
+  padding-top: 10px;
   height: 0;
   overflow: auto;
 }
@@ -828,6 +828,12 @@
 .footer__copyright a {
   text-decoration: none;
   color: #55ae9f;
+}
+
+@media only screen and (min-width: 900px) {
+  .map__inner {
+    padding-bottom: 40%;
+  }
 }
 
 @media only screen and (max-width: 1210px) {

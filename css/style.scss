@@ -706,8 +706,8 @@
 .map {
     &__inner {
         position: relative;
-        padding-bottom:56.25%; 
-        padding-top: 25px;
+        padding-bottom: 70%; 
+        padding-top: 10px;
         height: 0;
         overflow: auto; 
     }
@@ -817,13 +817,19 @@
         }
     }
 }
+@media only screen and (min-width: 900px) {
+    .map {
+        &__inner {
+            padding-bottom: 40%; 
+        }
+    }    
+}
 
 @media only screen and (max-width: 1210px) {
     .container {
         max-width: 100%;
         padding: 0 20px;
     }
-
 }
 
 @media only screen and (max-width: 900px) {
@@ -942,6 +948,7 @@
 
     }
 
+
     .about {
         &__box {
             flex-wrap: wrap;
@@ -995,6 +1002,7 @@
 }
 
 @media only screen and (max-width: 640px) {
+
     .reviews {
         &__slides {
             width: 400px;
