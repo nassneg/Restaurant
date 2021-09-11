@@ -321,7 +321,7 @@
   margin-left: 0;
 }
 
-.contact__follow_nets a svg {
+.contact__follow_nets a img {
   height: 40px;
   width: 40px;
   -webkit-filter: grayscale(40%);
@@ -330,7 +330,7 @@
   transition: .2s ease-in-out;
 }
 
-.contact__follow_nets a svg:hover {
+.contact__follow_nets a img:hover {
   -webkit-transform: translate(0, -5px);
           transform: translate(0, -5px);
   -webkit-filter: grayscale(0%);
