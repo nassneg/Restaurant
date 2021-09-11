@@ -704,26 +704,21 @@
 }
 
 .map {
-    // height: auto;
-    // padding: 360px 0;
-    // background: url("../img/map.png");
-    // background-size: cover;
-    // background-position: center;
-    // background-repeat: no-repeat;
     &__inner {
-
-        height: 100%;
-        width: 100%;
+        position: relative;
+        padding-bottom:56.25%; 
+        padding-top: 25px;
+        height: 0;
+        overflow: auto; 
     }
 
     &__canvas {
-
-        height: 100%;
-        width: 100%;
-
         iframe {
-            height: 700px;
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
+            height: 100%;
         }
     }
 }
@@ -997,17 +992,9 @@
         }
 
     }
-
-    .map {
-        padding: 300px 0;
-    }
 }
 
 @media only screen and (max-width: 640px) {
-    .map {
-        padding: 260px 0;
-    }
-
     .reviews {
         &__slides {
             width: 400px;
@@ -1059,12 +1046,6 @@
 
         }
     }
-
-
-    .map {
-        padding: 160px 0;
-    }
-
     .reviews {
         &__slides {
             width: 250px;
