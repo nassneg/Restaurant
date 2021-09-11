@@ -1,6 +1,56 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,500,regular,italic,700,900&display=swap");
-
 @-webkit-keyframes spinPulse {
+  0% {
+    -moz-transform: rotate(160deg);
+    opacity: 0;
+    -webkit-box-shadow: 0 0 1px #2187e7;
+            box-shadow: 0 0 1px #2187e7;
+  }
+  50% {
+    -moz-transform: rotate(145deg);
+    opacity: 1;
+  }
+  100% {
+    -moz-transform: rotate(-320deg);
+    opacity: 0;
+  }
+}
+@keyframes spinPulse {
+  0% {
+    -moz-transform: rotate(160deg);
+    opacity: 0;
+    -webkit-box-shadow: 0 0 1px #2187e7;
+            box-shadow: 0 0 1px #2187e7;
+  }
+  50% {
+    -moz-transform: rotate(145deg);
+    opacity: 1;
+  }
+  100% {
+    -moz-transform: rotate(-320deg);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes spinoffPulse {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@keyframes spinoffPulse {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@keyframes spinPulse {
   0% {
     -webkit-transform: rotate(160deg);
     opacity: 0;
@@ -17,7 +67,7 @@
   }
 }
 
-@-webkit-keyframes spinoffPulse {
+@keyframes spinoffPulse {
   0% {
     -webkit-transform: rotate(0deg);
   }
@@ -28,6 +78,7 @@
 
 ::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   background-color: #F5F5F5;
 }
@@ -40,6 +91,7 @@
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: #75ab9c;
 }
 
@@ -357,7 +409,7 @@
 }
 
 .about__header {
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
 .about__title {
@@ -396,10 +448,16 @@
 
 .about__box_soup {
   width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .about__box_soup img {
-  width: 100%;
+  width: 90%;
   padding: 0 60px;
 }
 
@@ -419,7 +477,6 @@
 
 .reviews__vector img {
   width: 100%;
-  height: 100%;
 }
 
 .reviews__inner {
