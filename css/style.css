@@ -477,7 +477,6 @@
 
 .reviews__vector img {
   width: 100%;
-  height: 100%;
 }
 
 .reviews__inner {
@@ -525,6 +524,10 @@
 
 .reviews__slide {
   width: 100%;
+}
+
+.reviews__slide img {
+  width: 10%;
 }
 
 .reviews__tit {
